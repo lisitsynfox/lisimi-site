@@ -165,68 +165,6 @@ body {
 ul { padding-left: 20px; }
 li { margin-bottom: 10px; }
 
-/*  Донаты */
-
-.donate-box {
-    background: #1A1A1A;
-    padding: 25px;
-    border: 3px solid #F5C518;
-    box-shadow: 0 0 25px rgba(245,197,24,0.25);
-}
-
-.donate-list {
-    height: 220px;
-    overflow-y: auto;
-    margin-bottom: 15px;
-    padding-right: 6px;
-}
-
-.donate-list::-webkit-scrollbar {
-    width: 6px;
-}
-.donate-list::-webkit-scrollbar-thumb {
-    background: #F5C518;
-}
-
-.donate-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #333;
-}
-
-.rank {
-    width: 30px;
-    font-weight: bold;
-}
-
-.name { flex: 1; }
-.amount { color: white; }
-
-/* ТОП 3 */
-
-.top1 { background: linear-gradient(90deg,#FFD70022,transparent); }
-.top2 { background: linear-gradient(90deg,#C0C0C022,transparent); }
-.top3 { background: linear-gradient(90deg,#CD7F3222,transparent); }
-
-.crown { margin-right: 6px; }
-.gold { color: #FFD700; }
-.silver { color: #C0C0C0; }
-.bronze { color: #CD7F32; }
-
-.total {
-    border-top: 2px solid #F5C518;
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-}
-
-.total span {
-    font-weight: bold;
-    color: white;
-}
-
 .hero-title {
     font-family: 'Russo One', sans-serif;
     font-size: 32px;
@@ -343,3 +281,35 @@ li { margin-bottom: 10px; }
     box-shadow: 0 0 20px rgba(245,197,24,0.5);
 
 }
+
+.helping-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 34px;
+    color: #F5C518;
+    letter-spacing: 4px;
+}
+.honor-subtitle {
+    margin-top: 14px;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+}
+.byline {
+    margin-top: 7px;
+    font-size: 11px;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+.credits-anchor {
+    margin-top: 45px;
+    padding: 26px 30px;
+    border-top: 3px solid #F5C518;
+    background: #141414;
+    color: #e8e8e8;
+    font-family: 'Russo One', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.credits-anchor strong { color: #FFD54A; }

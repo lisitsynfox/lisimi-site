@@ -21,7 +21,7 @@
                 <div class="helping-title">HELPING</div>
                 <h1>ДОСКА ПОЧЁТА <em>ЦИТАДЕЛИ</em></h1>
                 <p>Люди, благодаря которым Curse Of Chaos стал больше, крепче и атмосфернее.</p>
-                <div class="byline"> @BY LISITSYN &amp; KIMIKIM</div>
+                <div class="byline"> · @BY LISITSYN &amp; KIMIKIM</div>
             </div>
         </div>
         <div class="hero-line"><span>THANK YOU FOR YOUR HELP</span></div>
@@ -33,7 +33,6 @@
                 <div class="section-head"><span class="index">01</span><h2>Помощь с модом</h2></div>
                 <div class="members">
                     <article class="member featured"><a class="member-name" href="https://www.tiktok.com/@maxbaxwer?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer">MaxBaxwer <span>↗</span></a><p>Является основным помощником в создании мода. Дал мне хороший старт и вдохновил на создание мода. Объяснил концепт добавления способностей, помог с фиксами нескольких багов и навигацией по коду. Помог с серверной частью, античитом и чатом. Очень большая благодарность ему. Научил делать локальный хостинг и т.д.</p></article>
-                    <article class="member"><a class="member-name" href="https://www.youtube.com/@Virtsfun" target="_blank" rel="noopener noreferrer">Virtsfun <span>↗</span></a><p>Очень хорошая помощь с кодом, также хорошо помог с навигацией.</p></article>
                     <article class="member"><a class="member-name" href="https://t.me/inf_server_195" target="_blank" rel="noopener noreferrer">INF <span>↗</span></a><p>Консультация по поводу сервера. Также предлагал помощь с обслуживанием.</p></article>
                     <article class="member"><div class="member-name">АНОНИМ</div><p>Помог с фиксом чата и защитой сервера.</p></article>
                     <article class="member"><a class="member-name" href="https://t.me/td2dr_gamma" target="_blank" rel="noopener noreferrer">WonderEye <span>↗</span></a><p>Спасибо за неожиданную помощь)</p></article>
@@ -85,8 +84,7 @@
                     <article class="member"><a class="member-name" href="https://www.tiktok.com/@nagets__69?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer">nagets__69 <span>↗</span></a><p>Помогала в бета тесте вместе с Mr. Sonic.</p></article>
                     <article class="member"><a class="member-name" href="https://www.tiktok.com/@dream_thefox?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer">DreamTheFoX <span>↗</span></a><p>Также помог в нахождении багов (а ещё он финский снайпер).</p></article>
                     <article class="member"><a class="member-name" href="https://t.me/Lokitmaschannel" target="_blank" rel="noopener noreferrer">Lokitmas <span>↗</span></a><p>Хороший тестер мода. Также я не считаю его ноунеймом =)</p></article>
-                    <article class="member"><a class="member-name" href="https://www.tiktok.com/@vimkureal?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer">Vimku <span>↗</span></a><p>Топ чел, нашёл критичные баги.</p></article>
-                    <article class="member"><a class="member-name" href="https://discord.gg/ZXSufmQSgb" target="_blank" rel="noopener noreferrer">Peter Griffin <span>↗</span></a><p>Топ чел х2.</p></article>
+                    <article class="member featured lost-hope"><a class="member-name" href="https://discord.gg/ZXSufmQSgb" target="_blank" rel="noopener noreferrer">Sonic.exe: Lost Hope <span>↗</span></a><p>Спасибо команде Sonic.exe: Lost Hope за участие в бета тесте.</p><div class="owner-links"><span>Владельцы:</span><a href="https://www.tiktok.com/@vimkureal?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer">Vimku ↗</a><a href="https://web.telegram.org/k/#@Uncle_Griffin" target="_blank" rel="noopener noreferrer">M1L3S / Peter Griffin ↗</a></div></article>
                 </div>
             </section>
         </div>
@@ -107,5 +105,25 @@
         <p>ЕСЛИ ВАС НЕ УПОМЯНУЛИ, НО ТУТ ЕСТЬ ВАШИ РЕСУРСЫ — ОБЯЗАТЕЛЬНО ПИШИТЕ В ЛИЧНЫЕ ЧАТЫ TELEGRAM-КАНАЛА <a href="https://t.me/lisitsyn_FoX?direct" target="_blank" rel="noopener noreferrer">Lisitsyn_FoX ↗</a>. ЕСЛИ НЕТ TELEGRAM — МОЖЕТЕ НАПИСАТЬ В TIKTOK: <a href="https://www.tiktok.com/@lisitsyndisaster?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer">lisitsyndisaster ↗</a>.</p>
     </footer>
 </main>
+<script>
+const logo = document.querySelector('.logo-wrap');
+if (logo && matchMedia('(pointer:fine)').matches) {
+    logo.addEventListener('mousemove', e => {
+        const r = logo.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - .5;
+        const y = (e.clientY - r.top) / r.height - .5;
+        logo.style.setProperty('--mx', `${x * 14}px`);
+        logo.style.setProperty('--my', `${y * 14}px`);
+        logo.style.setProperty('--rx', `${-y * 9}deg`);
+        logo.style.setProperty('--ry', `${x * 9}deg`);
+    });
+    logo.addEventListener('mouseleave', () => {
+        logo.style.setProperty('--mx', '0px');
+        logo.style.setProperty('--my', '0px');
+        logo.style.setProperty('--rx', '0deg');
+        logo.style.setProperty('--ry', '0deg');
+    });
+}
+</script>
 </body>
 </html>
